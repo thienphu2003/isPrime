@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let check=prompt("Nhập số cần check");
+        if(isprime(check)) {
+            alert(check + " là số nguyên tố  ");
+        }
+
+
+    function isprime(n)
+
+    {
+
+        if (n===1)
+        {
+            return false;
+        }
+        else if(n === 2)
+        {
+            return true;
+        }else
+        {
+            for(var x = 2; x < n; x++)
+            {
+                if(n % x === 0)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+    }
+</script>
+</body>
+</html>
